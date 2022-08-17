@@ -64,6 +64,22 @@ Plug 'itchyny/lightline.vim'
 
 " vim-fugitive
 Plug 'tpope/vim-fugitive'
+
+" gitsigns
+Plug 'lewis6991/gitsigns.nvim'
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+
+" Autocompletion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'onsails/lspkind-nvim'
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 call plug#end()
 
 " ...general settings because there is already a status line
@@ -74,5 +90,17 @@ colorscheme gruvbox
 " Use this for dark color schemes
 set background=dark
 
+" ... general settings to show git signs
+set signcolumn=number
+
 lua require('rohith_namespace')
 
+" remap
+let mapleader = ' '
+
+nnoremap <leader>h :wincmd h<Cr>
+nnoremap <leader>j :wincmd j<Cr>
+nnoremap <leader>k :wincmd k<Cr>
+nnoremap <leader>l :wincmd l<Cr>
+
+nnoremap <C-p> :Telescope find_files<Cr>
