@@ -1,12 +1,12 @@
 vim.g.lightline = {
    active = {
 		left = {
-			{ 'mode', 'past' },
-			{ 'gitbranch', 'filename', 'modified' }
+			{ 'mode', 'paste' },
+			{ 'gitbranch', 'readonly', 'filename', 'modified' }
 		}
 	},
 	component_function = {
-		gitbranch = 'fugitive#head'
+		gitbranch = 'FugitiveHead'
 	} 
 }
 
