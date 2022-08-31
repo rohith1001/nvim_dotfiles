@@ -41,5 +41,6 @@ return require('packer').startup(function(use)
 
     -- Treesitter
     use 'nvim-treesitter/nvim-treesitter'
-    --, { 'do': ':TSUpdate' }use 'gruvbox-community/gruvbox'
+
+    use 'ThePrimeagen/vim-be-good'
 end)
