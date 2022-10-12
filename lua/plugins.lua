@@ -42,5 +42,11 @@ return require('packer').startup(function(use)
     -- Treesitter
     use 'nvim-treesitter/nvim-treesitter'
 
-    use 'ThePrimeagen/vim-be-good'
+    use 'ThePrimeagen/harpoon'
+
+    use 'ekalinin/Dockerfile.vim'
+
+    use 'ellisonleao/glow.nvim'
+
+    use 'glench/vim-jinja2-syntax'
 end)

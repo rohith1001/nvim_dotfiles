@@ -8,7 +8,7 @@ nnoremap("<leader>l", ":wincmd l<Cr>")
 
 -- Copy to clipboard
 vnoremap("<leader>y", "\"*y")
-nnoremap("<leader>Y", "\"*y$")
+nnoremap("<leader>Y", "\"*yy")
 nnoremap("<leader>y", "\"*y")
 nnoremap("<leader>yy","\"*yy")
 
@@ -19,7 +19,7 @@ vnoremap("<leader>p", "*p")
 vnoremap("<leader>P", "*P")
 
 nnoremap("<C-p>", ":Telescope find_files<Cr>")
-nnoremap("<leader>pv",":wincmd v<bar> :Ex<bar> :vertical resize 30<Cr>")
+nnoremap("<leader>ex",":Ex<Cr>")
 
 nnoremap ("<leader>ff", "<cmd>Telescope find_files<cr>")
 nnoremap ("<leader>fg", "<cmd>Telescope live_grep<cr>")
