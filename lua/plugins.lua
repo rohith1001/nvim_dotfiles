@@ -49,4 +49,9 @@ return require('packer').startup(function(use)
     use 'ellisonleao/glow.nvim'
 
     use 'glench/vim-jinja2-syntax'
+
+    use 'sQVe/sort.nvim'
+
+    -- LSP for go
+    use 'golang/tools/tree/master/gopls'
 end)

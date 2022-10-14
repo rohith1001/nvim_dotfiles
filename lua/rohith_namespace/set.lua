@@ -1,7 +1,7 @@
 -- vim.opt.guicursor = ""
 
 vim.opt.number = true
-vim.opt.relativenumber = true
+-- vim.opt.relativenumber = true
 
 vim.opt.errorbells = false
 
@@ -48,4 +48,4 @@ vim.g.mapleader = " "
 vim.opt.hidden = true
 vim.opt.mouse = "a"
 vim.opt.showmode = false
-vim.opt.signcolumn = "number"
+-- vim.opt.signcolumn = "number"
